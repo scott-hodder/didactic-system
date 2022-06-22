@@ -1,13 +1,19 @@
+:root {
+    --background: #fefbe9;
+    --textcolor: #183a1d;
+    --headingcolor: #f0a04b;
+}
+
 * {
-    color: whitesmoke;
+    color: var(--textcolor);
     font-weight: 1000;
 }
 html {
-    background-color: #1a2238;
+    background-color: var(--background);
 }
 
 p:hover h1:hover h2:hover h3:hover h4:hover h5:hover h6:hover {
-    color: #9DAAF2;
+    color: var(--headingcolor);
 }
 
 .container {
@@ -17,7 +23,7 @@ p:hover h1:hover h2:hover h3:hover h4:hover h5:hover h6:hover {
     width: 100%;
     height: 100vh;
     grid-gap: 15px;
-    background-color: #1A2238;
+    background-color: var(--background);
 
 }
 /* header design */
@@ -36,7 +42,7 @@ p:hover h1:hover h2:hover h3:hover h4:hover h5:hover h6:hover {
     border-radius: 10px;
     margin: 10px;
     width: 75%;
-    background-color: #9DAAF2;
+    background-color: var(--headingcolor);
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .searchImg {
@@ -75,18 +81,15 @@ h3 {
     height: 30px;
     margin-right: 20px;
 }
-h4 {
-    font-size: 20px;
-    color: #9DAAF2;
-}
+
 .myName {
-    color: #FF6A3D;
+    color: var(--headingcolor);
     font-weight: 100px;
     font-size:1.5rem;
 }
 .myName:hover {
     transform: scale(1.05);
-    color: #9DAAF2;
+    color: var(--headingcolor);
 }
 /* header bottom left */
 .headerBottomLeft {
@@ -98,8 +101,8 @@ h4 {
 .headerBtn {
     margin: 10px;
     border-radius: 10px;
-    background-color: #FF6A3D;
-    box-shadow: 1px 5px rgb(238,98,58);
+    background-color: var(--headingcolor);
+    box-shadow: 1px 5px #DEB992;
     border: none;
     color: whitesmoke;
     padding: 10px;
@@ -111,29 +114,19 @@ h4 {
     transition: 0.2s  
 }
 .headerBtn:hover {
-    box-shadow: 1px 5px #9DAAF2;
+    box-shadow: 1px 5px #DEB992;
     transform: scale(1.2);
 }
 
 /* dashboard side bar */
 .dashboard {
     grid-row: 1 / 6;
-    background-color: #1A2238;
-    color: whitesmoke;
+    background-color: var(--background);;
+    color: #DEB992;
     width: 70%;
     text-align: left;
 }
-h5 {
-    background-color: #1A2238;
-    color: #FF6A3D;
-    font-size: 2vw;
-    font-weight: 1500px;
-    text-align: center;
-}
 
-h3:hover {
-    color: #9DAAF2;
-}
 
 li {
     display: flex;
@@ -161,10 +154,10 @@ li:hover {
 .project {
     
     border-radius: 10px;
-    background-color: #1a2238;
+    background-color: var(--background);
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     line-height: 20px;
-    border-left: #FF6A3D solid 8px;
+    border-left: var(--headingcolor) solid 8px;
     padding-left: 10px;
 }
 
@@ -180,22 +173,42 @@ li:hover {
     height: 100%;
     overflow: auto;
 }
+
+h4 {
+    font-size: 20px;
+    color: #DEB992;
+}
+
+h5 {
+    background-color: var(--background);
+    color: var(--headingcolor);
+    font-size: 2vw;
+    font-weight: 1500px;
+    text-align: center;
+}
+
+h3:hover {
+    color: var(--headingcolor);
+}
+h2 {
+    font-size: 20px;;
+}
 h6 {
-    font-size: 14px;
-    color: #FF6A3D;
+    font-size: 18px;
+    color: var(--headingcolor)
 }
 
 h3 {
-    color: #FF6A3D;
+    color: var(--headingcolor);
 }
 ::-webkit-scrollbar {
-    background-color: #FF6A3D;
+    background-color: var(--background);
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #1a2238;
+    background-color: var(--headingcolor);
 }
 
 li:hover {
-    color:#9DAAF2;
+    color:#var(--headingcolor);
 }
