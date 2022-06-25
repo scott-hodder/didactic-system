@@ -4,16 +4,24 @@
     --headingcolor: #f0a04b;
 }
 
+.theme-dark {
+--background: #000000;
+--textcolor: #f5f5f5;
+--headingcolor: #FF00FF;
+}
+
+.theme-dark {
+    --background: #000000;
+    --textcolor: #f5f5f5;
+    --headingcolor: #FF00FF;
+}
+
 * {
     color: var(--textcolor);
     font-weight: 1000;
 }
 html {
     background-color: var(--background);
-}
-
-p:hover h1:hover h2:hover h3:hover h4:hover h5:hover h6:hover {
-    color: var(--headingcolor);
 }
 
 .container {
@@ -50,6 +58,26 @@ p:hover h1:hover h2:hover h3:hover h4:hover h5:hover h6:hover {
     margin-left: 10px;
     margin-top:10px;
 }
+button {
+    background: var(--headingcolor);
+    color: var(--textcolor);
+    box-shadow: 1px 5px #DEB992;
+    border: none;
+    color: var(--textcolor);
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+button:active {
+    box-shadow: none;
+    transform: translateY(5px);
+    transition: 0.2s  
+}
+button:hover {
+    box-shadow: 1px 5px #DEB992;
+    transform: scale(1.2);
+}
+
 /* name and profile pic design */
 .name {
     grid-column: 1 / 4;
@@ -104,7 +132,7 @@ h3 {
     background-color: var(--headingcolor);
     box-shadow: 1px 5px #DEB992;
     border: none;
-    color: whitesmoke;
+    color: var(--textcolor);
     padding: 10px;
     cursor: pointer;
 }
@@ -182,16 +210,21 @@ h4 {
 h5 {
     background-color: var(--background);
     color: var(--headingcolor);
-    font-size: 2vw;
+    font-size: 3vw;
     font-weight: 1500px;
     text-align: center;
+}
+
+h5:hover {
+    transform: scale(1.2);
 }
 
 h3:hover {
     color: var(--headingcolor);
 }
 h2 {
-    font-size: 20px;;
+    font-size: 20px;
+    color: var(--headingcolor)
 }
 h6 {
     font-size: 18px;
@@ -199,7 +232,7 @@ h6 {
 }
 
 h3 {
-    color: var(--headingcolor);
+    color: var(--text-color);
 }
 ::-webkit-scrollbar {
     background-color: var(--background);
@@ -210,5 +243,5 @@ h3 {
 }
 
 li:hover {
-    color:#var(--headingcolor);
+    color: var(--headingcolor);
 }
